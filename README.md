@@ -1,4 +1,5 @@
-# Neural Decoding Project
+# Neural Spike-Based Cursor Velocity Prediction with Decoder-Only Transformers
+
 
 This project processes neural spike data and trains a neural network model to predict cursor velocity based on neural activity.
 
@@ -34,7 +35,7 @@ pip install -r requirements.txt
 ## Requirements
 See `requirements.txt` for dependencies.
 
-# Neural Spike-Based Cursor Velocity Prediction with Transformers
+---
 
 ## Overview
 This project implements a Transformer-based model to predict the cursor velocity of a monkey based on its neural spike activity. The dataset consists of neural recordings from 71 channels sampled at ~100 Hz, with corresponding cursor velocity data. The goal is to model the relationship between neural activity and movement dynamics using a **decoder-only Transformer**, implemented from scratch.
