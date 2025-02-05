@@ -48,6 +48,8 @@ pip install -r requirements.txt
 - **Cursor Velocity Data:**
   - `timestamps`: (time,)
   - `data`: (time, Velocity_channels) → `[Vx, Vy]`
+ 
+  - ![Alt text](Cursor_Velocity.png)
 
 ## Preprocessing Pipeline
 1. **Binning Neural Data:**
