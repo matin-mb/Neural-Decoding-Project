@@ -14,6 +14,8 @@ This project implements a Transformer-based model to predict the cursor velocity
 
 ## Installation
 
+## Requirements
+
 ```sh
 pip install -r requirements.txt
 ```
@@ -36,9 +38,6 @@ pip install -r requirements.txt
    ```sh
    python test.py
    ```   
-
-## Requirements
-See `requirements.txt` for dependencies.
 
 ---
 
