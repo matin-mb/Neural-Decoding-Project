@@ -32,6 +32,10 @@ pip install -r requirements.txt
    ```sh
    python train.py
    ```
+4. **Test Model**
+   ```sh
+   python test.py
+   ```   
 
 ## Requirements
 See `requirements.txt` for dependencies.
