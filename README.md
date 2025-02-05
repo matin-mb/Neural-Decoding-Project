@@ -1,7 +1,7 @@
 # Neural Spike-Based Cursor Velocity Prediction with Decoder-Only Transformers
 
 
-This project processes neural spike data and trains a neural network model to predict cursor velocity based on neural activity.
+This project processes neural spike data and trains a Decoder-Only Transformers model to predict cursor velocity based on neural activity of Long-term recordings of motor and premotor cortical spiking activity during reaching in monkeys.
 
 ## Project Structure
 
