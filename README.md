@@ -38,9 +38,6 @@ pip install -r requirements.txt
 ## Requirements
 See `requirements.txt` for dependencies.
 
-
-
-
 # Neural Spike-Based Cursor Velocity Prediction with Transformers
 
 ## Overview
@@ -48,12 +45,12 @@ This project implements a Transformer-based model to predict the cursor velocity
 
 ## Dataset
 - **Neural Data:**
-  - `spike_times`: (319409,)
-  - `spike_times_index`: (71,)
+  - `spike_times`: (n_samples,)
+  - `spike_times_index`: (n_channels,)
   
 - **Cursor Velocity Data:**
-  - `timestamps`: (66321,)
-  - `data`: (66321, 2) → `[Vx, Vy]`
+  - `timestamps`: (time,)
+  - `data`: (time, Velocity_channels) → `[Vx, Vy]`
 
 ## Preprocessing Pipeline
 1. **Binning Neural Data:**
@@ -73,65 +70,22 @@ The model is a **decoder-only Transformer**, implemented from scratch. It consis
 - **Positional Encoding**
 - **Stacked Transformer Blocks**
 
-### Hyperparameters
-| Parameter           | Value  |
-|--------------------|--------|
-| Embedding Size     | 200    |
-| Number of Layers  | 3      |
-| Heads             | 5      |
-| Dropout Rate      | 0.3    |
-| Forward Expansion | 4      |
-| Input Length      | 100    |
-| Batch Size        | 64     |
-| Epochs            | 40     |
-| Learning Rate     | 1e-4   |
 
-## Training and Evaluation
-- **Loss Function:** Mean Squared Error (MSE)
-- **Optimizer:** Adam
-- **Metrics:**
-  - Mean Squared Error (MSE)
-  - R² Score
-
-### Training Results (Example)
+### Test Results 
 ```
-Epoch 1/40, Loss: 46.94
-Epoch 10/40, Loss: 22.39
-Epoch 20/40, Loss: 11.72
-Epoch 30/40, Loss: 5.78
-Epoch 40/40, Loss: 2.87
-Test MSE: 61.37, R² Score: -0.39
+Test MSE: 13.135366, R2 Score: 0.689168
 ```
 
 ## Challenges and Next Steps
-🔴 **Current Issue:** Test MSE is high, and R² is negative, indicating poor generalization.
+🔴 **Current Issue:** Multi-Session Training and Testing
 ✅ **Possible Improvements:**
-- Hyperparameter tuning (heads, embedding size, forward expansion)
-- Alternative loss functions (e.g., Huber Loss)
-- Data augmentation or regularization
-- Attention visualization to understand feature importance
 
-## How to Run
-### Install Dependencies
-```bash
-pip install numpy torch scikit-learn matplotlib
-```
-
-### Train the Model
-```bash
-python train.py
-```
-
-### Evaluate
-```bash
-python evaluate.py
-```
 
 ## Contributors
-- **[Your Name]** – Model Implementation, Preprocessing
-- **[Your Collaborator]** – Data Analysis, Report Writing
+- **Matin M.Babaei** – Intern
+- **Arshia Afzal** – Supervisor
 
 ## License
-MIT License (Feel free to modify and use)
+EPFL License 
 
 
