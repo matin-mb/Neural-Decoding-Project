@@ -70,6 +70,8 @@ The model is a **decoder-only Transformer**, implemented from scratch. It consis
 ```
 Test MSE: 13.135366, R2 Score: 0.689168
 ```
+![Alt text](Result_Vx.png)
+
 
 
 
