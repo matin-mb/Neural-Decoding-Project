@@ -1,7 +1,3 @@
-# Neural-Decoding-Project
----
-### Abstract
-
 # Neural Decoding Project
 
 This project processes neural spike data and trains a neural network model to predict cursor velocity based on neural activity.
