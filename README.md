@@ -12,7 +12,6 @@ This project implements a Transformer-based model to predict the cursor velocity
 - `train.py` - Trains the neural decoder model and evaluates performance.
 - `utils.py` - Contains helper functions for data normalization and conversion.
 
-## Installation
 
 ## Requirements
 
